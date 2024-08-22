@@ -6,7 +6,7 @@ const fistfunction =(name,age)=>{
        name,age
       }
 }
-// console.log(fistfunction('mamun',22))
+console.log(fistfunction('mamun',22))
 
 
 let firstobject={
