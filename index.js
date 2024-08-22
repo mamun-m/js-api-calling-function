@@ -1,36 +1,22 @@
-// confirm box start 
+const button=document.querySelector("button");
+const p=document.querySelector("p")
+button.addEventListener("click", function startclock (){
+      let date =new Date();
+      let hours =date.getHours();
+      let mintes=date.getMinutes();
+      let seconds=date.getSeconds();
+           mintes=countfunction(mintes);
+           seconds=countfunction(seconds);
+      let times=hours + ":" +mintes+":"+seconds;
 
-const firstfunction =()=>{
-const heading=confirm('are you agree for delete :');
+      p.textContent=times;
+     
+setInterval(startclock, 1000)
+})
 
-if (heading) {
-   console.log('deleted')
-} else {
-  console.log('not a delete ')
+const countfunction =(value)=>{
+      if (value < 10) {
+         value = "0" +value
+      }
+      return value;
 }
-}
-firstfunction();
-
-// confirm box ends
-
-
-// second section is start
-
-const secondfunction =()=>{
-let h1=document.createElement('h1');
-let text;
-let name=prompt('Enter your characters : ');
-if (name === null || name === "" ) {
-  text = 'no name found '
-} else {
-  text=name;
-}
-let textDecoration=document.createTextNode(text);
-h1.appendChild(textDecoration);
-document.body.appendChild(h1)
-
-}
-secondfunction();
-
-
-// second section is ends
