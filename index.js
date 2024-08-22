@@ -1,22 +1,44 @@
-const button=document.querySelector("button");
-const p=document.querySelector("p")
-button.addEventListener("click", function startclock (){
-      let date =new Date();
-      let hours =date.getHours();
-      let mintes=date.getMinutes();
-      let seconds=date.getSeconds();
-           mintes=countfunction(mintes);
-           seconds=countfunction(seconds);
-      let times=hours + ":" +mintes+":"+seconds;
+// object literals 
 
-      p.textContent=times;
-     
-setInterval(startclock, 1000)
-})
 
-const countfunction =(value)=>{
-      if (value < 10) {
-         value = "0" +value
+const fistfunction =(name,age)=>{
+      return {
+       name,age
       }
-      return value;
 }
+// console.log(fistfunction('mamun',22))
+
+
+let firstobject={
+      first () {
+      return `i am mohammad mamun mia and front and web development`
+  }
+}
+console.log(firstobject["first mamun"])
+
+// secod type functio 
+
+let secondobject={
+      'first mamun' () {
+      return `i am mohammad mamun mia and front and web development`
+  }
+}
+console.log()
+
+// third system funciton 
+
+let thirdobject={
+      'first mamun' : () =>{
+      return `i am mohammad mamun mia and front and web development`
+  }
+}
+console.log(thirdobject["first mamun"])
+
+// fourth function system 
+
+let fourthobject={
+      fourth : () =>{
+      return `i am mohammad mamun mia and front and web development`
+  }
+}
+console.log(fourthobject.fourth())
