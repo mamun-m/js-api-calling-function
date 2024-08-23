@@ -1,24 +1,35 @@
-// foreach function 
+const studentinfo = [
+  { 
+   name : "mia",
+   age : 21,
+   gpa : 3.21
+   },
+  { 
+   name : "mamun",
+   age : 22,
+   gpa : 3.45
+   },
 
-
-// let number =[10,20,30,40,50,60,70];
-
-// let emptynumber=[]
-// number.forEach((x)=> {
-//     emptynumber.push(x*x);
-// })
-// console.log(emptynumber)
-
-
-
-// map function 
-
-// let number =[10,20,30,40,50,60,70].map((x)=> x*x);
-// console.log(number)
-
-// filter function 
-
-const number=[21,4,1,44,56454,54,6541,21,21,21,54,584,1,34,52];
-
-const numbers=number.filter((x)=> x<20);
-console.log(numbers)
+  { 
+   name : "hasan",
+   age : 23,
+   gpa : 2.54
+   },
+  { 
+   name : "abir",
+   age : 25,
+   gpa : 3.21
+   },
+  { 
+   name : "hasan",
+   age : 26,
+   gpa : 4.21
+   },
+  { 
+   name : "josep",
+   age : 27,
+   gpa : 5.00
+   },
+]
+const student=studentinfo.filter((x)=> x.gpa>3).filter((x)=> x.name);
+console.log(student)
