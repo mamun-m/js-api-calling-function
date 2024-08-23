@@ -1,44 +1,24 @@
-// object literals 
+// foreach function 
 
 
-const fistfunction =(name,age)=>{
-      return {
-       name,age
-      }
-}
-console.log(fistfunction('mamun',22))
+// let number =[10,20,30,40,50,60,70];
+
+// let emptynumber=[]
+// number.forEach((x)=> {
+//     emptynumber.push(x*x);
+// })
+// console.log(emptynumber)
 
 
-let firstobject={
-      first () {
-      return `i am mohammad mamun mia and front and web development`
-  }
-}
-console.log(firstobject["first mamun"])
 
-// secod type functio 
+// map function 
 
-let secondobject={
-      'first mamun' () {
-      return `i am mohammad mamun mia and front and web development`
-  }
-}
-console.log()
+// let number =[10,20,30,40,50,60,70].map((x)=> x*x);
+// console.log(number)
 
-// third system funciton 
+// filter function 
 
-let thirdobject={
-      'first mamun' : () =>{
-      return `i am mohammad mamun mia and front and web development`
-  }
-}
-console.log(thirdobject["first mamun"])
+const number=[21,4,1,44,56454,54,6541,21,21,21,54,584,1,34,52];
 
-// fourth function system 
-
-let fourthobject={
-      fourth : () =>{
-      return `i am mohammad mamun mia and front and web development`
-  }
-}
-console.log(fourthobject.fourth())
+const numbers=number.filter((x)=> x<20);
+console.log(numbers)
