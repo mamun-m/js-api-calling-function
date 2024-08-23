@@ -1,35 +1,24 @@
-const studentinfo = [
-  { 
-   name : "mia",
-   age : 21,
-   gpa : 3.21
-   },
-  { 
-   name : "mamun",
-   age : 22,
-   gpa : 3.45
-   },
+// const studentinfo = {
+//      name : "mohammad mamun",
+//      age : 21,
+//      gpa : 3.95,
+//     lang : {
+//      beginner :"bangla",
+//      avdance : "english"
+//   }
+// }
+// const {name,age,gpa,lang}=studentinfo;
+// console.log(`${name}:${age}:${gpa}:${lang}`)
 
-  { 
-   name : "hasan",
-   age : 23,
-   gpa : 2.54
-   },
-  { 
-   name : "abir",
-   age : 25,
-   gpa : 3.21
-   },
-  { 
-   name : "hasan",
-   age : 26,
-   gpa : 4.21
-   },
-  { 
-   name : "josep",
-   age : 27,
-   gpa : 5.00
-   },
-]
-const student=studentinfo.filter((x)=> x.gpa>3).filter((x)=> x.name);
-console.log(student)
+
+
+const studentinfo ={
+     name :"mia mamun khan",
+     age : 21,
+     id: 104,
+}
+
+const firstfunction =({name,age,id})=>{
+   console.log(`${name} :${age} ${id}`)
+}
+firstfunction(studentinfo)
